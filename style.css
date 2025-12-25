@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+header {
+    background: #020617;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #38bdf8;
+    font-size: 2.4em;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #38bdf8;
+    color: #020617;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+section {
+    background: #020617;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* ===== SKILL BARS ===== */
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bar {
+    background: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 12px;
+    width: 0;
+    background: #22c55e;
+    animation: load 2s forwards;
+}
+
+.python { width: 70%; }
+.cyber  { width: 80%; }
+.network{ width: 75%; }
+.linux  { width: 65%; }
+
+@keyframes load {
+    from { width: 0; }
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+}
